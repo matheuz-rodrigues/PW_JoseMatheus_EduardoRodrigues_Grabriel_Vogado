@@ -1,0 +1,54 @@
+
+## **1️⃣ Página Inicial (`index.html`)**  
+📌 **Objetivo:** Apresentar a empresa, seus serviços e diferenciais.  
+📌 **Conteúdo:**  
+- Banner com imagem ou vídeo  
+- Breve descrição da empresa e sua especialidade (ex.: musculação, dança, crossfit)  
+- Diferenciais da empresa (profissionais qualificados, equipamentos modernos, etc.)  
+- Links para redes sociais e contato  
+- Menu de navegação para as outras páginas  
+
+---
+
+## **2️⃣ Página de Serviços e Horários (`servicos.html`)**  
+📌 **Objetivo:** Exibir todas as informações sobre horários de aulas e personal trainers.  
+📌 **Conteúdo:**  
+- Tabela de horários das aulas  
+- Lista de modalidades disponíveis  
+- Lista de personal trainers com foto e especialidade  
+- Formulário de agendamento de personal trainer  
+- Link para WhatsApp para dúvidas  
+
+---
+
+## **3️⃣ Página de Dicas (`dicas.html`)**  
+📌 **Objetivo:** Oferecer dicas sobre treino, nutrição e bem-estar.  
+📌 **Conteúdo:**  
+- Artigos curtos com dicas de exercícios e recuperação muscular  
+- Sugestões de dietas e receitas saudáveis  
+- Vídeos demonstrativos de exercícios  
+- Seção de "Perguntas Frequentes"  
+
+---
+
+## **4️⃣ Página "Fale Conosco" (`contato.html`)**  
+📌 **Objetivo:** Permitir que os visitantes enviem mensagens para a empresa.  
+📌 **Conteúdo:**  
+- **Formulário de contato** com os campos:  
+  - Nome  
+  - E-mail  
+  - Assunto  
+  - Mensagem  
+  - Botão de envio (grava os dados no banco de dados)  
+- Exibição de mensagens de erro caso algum campo não seja preenchido  
+- Links para redes sociais e WhatsApp  
+- Mapa de localização da empresa  
+
+---
+
+## **5️⃣ Página Administrativa (`admin.html`)**  
+📌 **Objetivo:** Gerenciar as mensagens enviadas no "Fale Conosco".  
+📌 **Conteúdo:**  
+- Tabela com as mensagens recebidas (Nome, E-mail, Assunto, Mensagem)  
+- Opção de excluir mensagens ou marcar como respondidas  
+- Login para acesso seguro (opcional)  
