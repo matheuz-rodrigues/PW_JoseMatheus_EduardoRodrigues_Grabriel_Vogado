@@ -1,21 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Scope+One&display=swap');
 
-
 header {
     font-family: "Archivo";
-    font-size: 23px;
-    padding: 10px 60px;
+    font-size: calc(16px + 0.5vw);
+    padding: calc(5px + 1vw) calc(20px + 2vw); 
     width: 90%;
-    height: 80px;
+    height: auto; 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: auto;
-   
+    margin: 0px;
+    flex-wrap: wrap; 
+    transform: scale(0.9); 
+    transform-origin: top center;
 }
 
 header img {
-    height: 90%;
+    
+    height: calc(60px + 1vw);
 }
 
 header ul {
@@ -23,10 +25,12 @@ header ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    flex-wrap: wrap; 
+    gap: calc(5px + 0.5vw); 
 }
 
 header ul li {
-    margin: 0 5px;
+    margin: 0;
 }
 
 header ul li a {
@@ -34,23 +38,24 @@ header ul li a {
     text-decoration: none;
 }
 
-
 header button {
     border: none;
     background: none;
+    margin-top: calc(5px + 1vw);
 }
 
 
 .btn {
     text-decoration: none;
-    padding: 15px 40px;
+    padding: calc(10px + 1vw) calc(20px + 1vw);
     display: inline-block;
     border-radius: 20px;
-    transition: all .2s;
+    transition: all 0.2s;
     position: relative;
     font-family: 'Archivo', sans-serif;
     border: none;
     cursor: pointer;
+    font-size: inherit; 
 }
 
 .btn:hover {
@@ -73,9 +78,8 @@ header button {
     top: 0;
     left: 0;
     z-index: -1;
-    transition: all .4s;
+    transition: all 0.4s;
 }
-
 
 .btn-white {
     border: solid #000000;
@@ -102,9 +106,34 @@ header button {
         opacity: 0;
         transform: translateY(30px);
     }
-
     100% {
         opacity: 1;
         transform: translateY(0);
     }
 }
+
+@keyframes slidy {
+    0% { left: 0%; }
+    45% { left: 0%; }
+    55% { left: -100%; }
+    100% { left: -100%; }
+  }
+  
+  #slider {
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  #slider figure {
+    position: relative;
+    width: 200%;
+    margin: 0;
+    left: 0;
+    font-size: 0;
+    animation: slidy 10s infinite;
+  }
+  
+  #slider figure img {
+    width: 50%; 
+    float: left;
+  }
