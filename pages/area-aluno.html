@@ -20,7 +20,6 @@
             <li><a href="servicos.html">Serviços e Horarios |</a></li>
             <li><a href="dicas.html">Dicas |</a></li>
             <li><a href="contato.html">Fale Conosco |</a></li>
-            <li><a href="admin.html">Página Adm</a></li>
         </ul>
         <div class="text-box">
             <a href="#" class="btn btn-white btn-animate">Área do Aluno</a>
@@ -46,9 +45,9 @@
         <div class="login">
             <form>
                 <label for="chk" aria-hidden="true">Entrar</label>
-                <input type="email" name="email" placeholder="Email ou CPF" required="">
-                <input type="password" name="pswd" placeholder="Senha" required="">
-                <button id="btnLogin">Login</button>
+                <input type="email" id="userLogin" name="email" placeholder="Email ou CPF" required="">
+                <input type="password" id="senhaLogin" name="pswd" placeholder="Senha" required="">
+                <button id="btnLogin" onclick="admin(event)">Login</button>
             </form>
         </div>
     </div>

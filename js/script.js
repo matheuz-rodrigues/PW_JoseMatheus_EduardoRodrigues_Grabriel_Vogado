@@ -6,3 +6,15 @@ window.onscroll = function() {
 function voltarAoTopo() {
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
+
+function admin() {
+
+  let user = document.getElementById("userLogin").value;
+  let senha = document.getElementById("senhaLogin").value;
+
+  if (user === "admin" && senha === "admin") {
+      window.location.href = "admin.html"; 
+  } else {
+      alert("Email ou senha incorretos!");
+  }
+}
