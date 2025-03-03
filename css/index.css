@@ -5,6 +5,7 @@ body {
 }
 
 header {
+    background-color: white;
     font-size: calc(16px + 0.5vw);
     padding: calc(5px + 1vw) calc(20px + 2vw);
     width: 90%;
@@ -16,6 +17,7 @@ header {
     flex-wrap: wrap;
     transform: scale(0.9);
     transform-origin: top center;
+
 }
 
 header img {
@@ -36,8 +38,7 @@ header ul li {
     margin: 0;
 }
 
-
-header ul li:hover{
+header ul li:hover {
     transform: scale(0.9);
     transition: 0.1s;
 }
@@ -245,26 +246,26 @@ header button {
     display: flex;
     gap: 15px;
     margin-top: 20px;
-  }
+}
 
-  .social-icons a img {
+.social-icons a img {
     width: 40px;
     height: 40px;
     transition: transform 0.3s, opacity 0.3s;
-  }
+}
 
-  .social-icons a:hover img {
+.social-icons a:hover img {
     transform: scale(1.2);
     opacity: 0.8;
-  }
+}
 
-  .btn-top {
+.btn-top {
     position: fixed;
     bottom: 20px;
     right: 20px;
     width: 50px;
     height: 50px;
-    background-color: #be620c;
+    background-color: #dc710c;
     color: #fff;
     border: none;
     border-radius: 50%;
@@ -274,15 +275,16 @@ header button {
     font-size: 24px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
-    display: none; /* Começa oculto */
-  }
+    display: none;
 
-  .btn-top:hover {
+}
+
+.btn-top:hover {
     background-color: #844408;
     transform: scale(1.1);
-  }
+}
 
-  footer {
+.rodape {
     text-align: center;
     margin-bottom: 20px
-  }
+}
