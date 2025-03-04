@@ -7,13 +7,14 @@ function voltarAoTopo() {
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
-function admin() {
+function admin(event) {
+  event.preventDefault();
 
   let user = document.getElementById("userLogin").value;
   let senha = document.getElementById("senhaLogin").value;
 
   if (user === "admin" && senha === "admin") {
-      window.location.href = "admin.html"; 
+      window.location.href = "admin.php";  
   } else {
       alert("Email ou senha incorretos!");
   }

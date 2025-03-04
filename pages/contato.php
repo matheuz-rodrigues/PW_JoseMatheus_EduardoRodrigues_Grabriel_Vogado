@@ -1,3 +1,44 @@
+<?php
+
+$host = "localhost";
+$dbname = "fale_comigo_bd";
+$username = "root";
+$password = "";
+
+$conn = new mysqli($host, $username, $password, $dbname);
+
+if ($conn->connect_error) {
+    die("Erro na conexão: " . $conn->connect_error);
+}
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $nome = $_POST['txt'];
+    $email = $_POST['email'];
+    $assunto = $_POST['assunto'];
+    $telefone = $_POST['number'];
+    $opiniao = $_POST['opniao'];
+
+    $sql = "INSERT INTO opinioes (nome, email, assunto, telefone, opiniao) VALUES (?, ?, ?, ?, ?)";
+    $stmt = $conn->prepare($sql);
+
+    if (!$stmt) {
+        die("Erro na preparação: " . $conn->error);
+    }
+
+    $stmt->bind_param("sssss", $nome, $email, $assunto, $telefone, $opiniao);
+
+    if ($stmt->execute()) {
+        echo "<script>alert('Opinião enviada com sucesso! Obrigado por seu feedback'); window.location.href='index.html';</script>";
+    } else {
+        echo "Erro ao enviar opinião: " . $stmt->error;
+    }
+
+    $stmt->close();
+}
+
+$conn->close();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -14,26 +55,23 @@
 
 <body>
     <header>
-        <img src="../img/logo.jpg" alt="Logo" onclick="index.html">
+        <img src="../img/logo.jpg" alt="Logo" onclick="location.href='../index.html'">
         <ul>
             <li><a href="index.html">Home |</a></li>
-            <li><a href="servicos.html">Serviços e Horarios |</a></li>
+            <li><a href="servicos.html">Serviços e Horários |</a></li>
             <li><a href="dicas.html">Dicas |</a></li>
-            <li><a href="contato.html">Fale Conosco</a></li>
-
+            <li><a href="contato.php">Fale Conosco</a></li>
         </ul>
         <div class="text-box">
             <a href="area-aluno.html" class="btn btn-white btn-animate">Área do Aluno</a>
         </div>
-
     </header>
 
     <section class="main">
         <input type="checkbox" id="chk" aria-hidden="true">
-
         <div class="signup">
-            <form action="../php/contato.php" method="post">
-                <label for="chk" aria-hidden="true">Mande sua opnião</label>
+            <form action="" method="post">
+                <label for="chk" aria-hidden="true">Mande sua opinião</label>
                 <input type="text" name="txt" placeholder="Informe seu nome" required="">
                 <input type="email" name="email" placeholder="Email" required="">
                 <select name="assunto" required>
@@ -44,10 +82,10 @@
                     <option value="Outro">Outro</option>
                 </select>
                 <input type="number" name="number" placeholder="Telefone" required="">
-                <textarea placeholder="Digite sua opnião" name="opniao" required=""></textarea>
-
+                <textarea placeholder="Digite sua opinião" name="opniao" required=""></textarea>
                 <button id="btnEnviar">Enviar</button>
             </form>
+        </div>
     </section>
 
     <footer class="rodape">
@@ -59,7 +97,6 @@
         class="float" target="_blank">
         <i class="fa fa-whatsapp my-float"></i>
     </a>
-
 </body>
 
 </html>
