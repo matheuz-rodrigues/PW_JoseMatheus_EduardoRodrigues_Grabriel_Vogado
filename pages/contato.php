@@ -1,7 +1,7 @@
 <?php
 
 $host = "localhost";
-$dbname = "fale_comigo_bd";
+$dbname = "academia";
 $username = "root";
 $password = "";
 
@@ -58,7 +58,7 @@ $conn->close();
         <img src="../img/logo.jpg" alt="Logo" onclick="location.href='../index.html'">
         <ul>
             <li><a href="index.html">Home |</a></li>
-            <li><a href="servicos.html">Serviços e Horários |</a></li>
+            <li><a href="servicos.php">Serviços e Horários |</a></li>
             <li><a href="dicas.html">Dicas |</a></li>
             <li><a href="contato.php">Fale Conosco</a></li>
         </ul>
@@ -68,9 +68,9 @@ $conn->close();
     </header>
 
     <section class="main">
-        <input type="checkbox" id="chk" aria-hidden="true">
-        <div class="signup">
-            <form action="" method="post">
+        
+        <div class="form">
+            <form  method="post">
                 <label for="chk" aria-hidden="true">Mande sua opinião</label>
                 <input type="text" name="txt" placeholder="Informe seu nome" required="">
                 <input type="email" name="email" placeholder="Email" required="">

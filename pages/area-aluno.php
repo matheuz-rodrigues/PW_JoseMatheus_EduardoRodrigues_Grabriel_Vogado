@@ -12,11 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     } else {
         $error = "Credenciais inválidas!";
     }
-}
-
-
-
-
+}  
 ?>
 
 <!DOCTYPE html>
@@ -42,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <img src="../img/logo.jpg" alt="Logo" onclick="index.html">
         <ul>
             <li><a href="index.html">Home |</a></li>
-            <li><a href="servicos.html">Serviços e Horarios |</a></li>
+            <li><a href="servicos.php">Serviços e Horarios |</a></li>
             <li><a href="dicas.html">Dicas |</a></li>
             <li><a href="contato.php">Fale Conosco</a></li>
         </ul>
