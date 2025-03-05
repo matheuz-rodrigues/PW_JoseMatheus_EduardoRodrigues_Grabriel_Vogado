@@ -1,3 +1,24 @@
+<?php
+session_start();
+
+$error = "";
+
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    // Credenciais fixas para o admin
+    if ($_POST["userLogin"] === "admin" && $_POST["senhaLogin"] === "123456") {
+        $_SESSION["admin"] = true;
+        header("Location: admin.php");
+        exit();
+    } else {
+        $error = "Credenciais inválidas!";
+    }
+}
+
+
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -9,10 +30,14 @@
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/area-aluno.css">
     <link rel="shortcut icon" href="../img/logo.ico" type="image/x-icon">
-    <script src="../js/script.js"></script>
 </head>
 
 <body>
+    <?php if ($error): ?>
+        <script>
+            alert("<?php echo $error; ?>");
+        </script>
+    <?php endif; ?>
     <header>
         <img src="../img/logo.jpg" alt="Logo" onclick="index.html">
         <ul>
@@ -24,7 +49,6 @@
         <div class="text-box">
             <a href="#" class="btn btn-white btn-animate">Área do Aluno</a>
         </div>
-
     </header>
 
     <div class="main">
@@ -34,7 +58,7 @@
             <form action="index.php" method="post">
                 <label for="chk" aria-hidden="true">Cadastre-se</label>
                 <input type="text" name="txt" placeholder="Informe seu nome" required="">
-                <input type="email" name="email" placeholder="Email" required="">
+                <input type="text" name="email" placeholder="Email" required="">
                 <input type="number" name="number" placeholder="Telefone" required="">
                 <input type="password" name="pswd" placeholder="Senha" required="">
                 <button id="btnCadastro">Cadastrar</button>
@@ -42,17 +66,17 @@
         </div>
 
         <div class="login">
-            <form>
+            <form action="" method="post">
                 <label for="chk" aria-hidden="true">Entrar</label>
-                <input type="email" id="userLogin" name="text" placeholder="Email ou CPF" required="">
-                <input type="password" id="senhaLogin" name="pswd" placeholder="Senha" required="">
-                <button id="btnLogin" onclick="admin(event)">Login</button>
+                <input type="text" id="userLogin" name="userLogin" placeholder="Email ou CPF" required="">
+                <input type="password" id="senhaLogin" name="senhaLogin" placeholder="Senha" required="">
+                <button type="submit">Login</button>
             </form>
         </div>
     </div>
 
     <footer class="rodape">
-        <p>2025 Piticos Gym &copy; Todos os direitos reservados. Desenvolvido por Matheus</p>
+        <p>2025 Piticos Gym &copy; Todos os direitos reservados. Desenvolvido por J. Matheus, Eduardo R. e Gabriel V.</p>
     </footer>
 </body>
 

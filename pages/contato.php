@@ -63,7 +63,7 @@ $conn->close();
             <li><a href="contato.php">Fale Conosco</a></li>
         </ul>
         <div class="text-box">
-            <a href="area-aluno.html" class="btn btn-white btn-animate">Área do Aluno</a>
+            <a href="area-aluno.php" class="btn btn-white btn-animate">Área do Aluno</a>
         </div>
     </header>
 
@@ -82,21 +82,16 @@ $conn->close();
                     <option value="Outro">Outro</option>
                 </select>
                 <input type="number" name="number" placeholder="Telefone" required="">
-                <textarea placeholder="Digite sua opinião" name="opniao" required=""></textarea>
+                <textarea placeholder="Digite sua opinião / Sugestão  ou Duvida" name="opniao" required=""></textarea>
                 <button id="btnEnviar">Enviar</button>
             </form>
         </div>
     </section>
 
     <footer class="rodape">
-        <p>2025 Piticos Gym &copy; Todos os direitos reservados. Desenvolvido por Matheus</p>
+        <p>2025 Piticos Gym &copy; Todos os direitos reservados. Desenvolvido por J. Matheus, Eduardo R. e Gabriel V. </p>    
     </footer>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <a href="https://api.whatsapp.com/send?phone=5591999175479&text=Hello,%20World!%20:)"
-        class="float" target="_blank">
-        <i class="fa fa-whatsapp my-float"></i>
-    </a>
 </body>
 
 </html>
