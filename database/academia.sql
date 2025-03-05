@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 04/03/2025 às 03:48
+-- Tempo de geração: 06/03/2025 às 00:47
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.1.25
 
@@ -18,8 +18,35 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Banco de dados: `fale_comigo_bd`
+-- Banco de dados: `academia`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura para tabela `appointments`
+--
+
+CREATE TABLE `appointments` (
+  `id` int(11) NOT NULL,
+  `nome` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `modalidade` varchar(50) NOT NULL,
+  `horario` varchar(20) NOT NULL,
+  `dias` varchar(100) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `appointments`
+--
+
+INSERT INTO `appointments` (`id`, `nome`, `email`, `modalidade`, `horario`, `dias`, `created_at`) VALUES
+(1, 'João Silva', 'joao@example.com', 'CrossFit', '8h00min', 'Segunda, Quarta, Sexta', '2025-03-05 22:09:34'),
+(2, 'Maria Souza', 'maria@example.com', 'Pilates', '10h00min', 'Terça, Quinta', '2025-03-05 22:09:34'),
+(3, 'Pedro Oliveira', 'pedro@example.com', 'Dança', '11h30min', 'Segunda, Sexta, Domingo', '2025-03-05 22:09:34'),
+(4, 'Ana Costa', 'ana@example.com', 'Yoga', '15h00min', 'Quarta, Quinta', '2025-03-05 22:09:34'),
+(5, 'Carlos Lima', 'carlos@example.com', 'Musculação', '17h00min', 'Segunda, Terça, Quarta, Quinta, Sexta', '2025-03-05 22:09:34');
 
 -- --------------------------------------------------------
 
@@ -52,11 +79,18 @@ INSERT INTO `opinioes` (`id`, `nome`, `email`, `assunto`, `telefone`, `opiniao`,
 (8, 'Roberta Lima', 'roberta@hotmail.com', 'Dúvidas', '369258147', 'Qual é a política de cancelamento de aulas?', '2025-03-04 02:37:27'),
 (9, 'Marcos Ferreira', 'marcos@uol.com.br', 'Sugestão', '753951456', 'Uma área de descanso no centro de atividades seria muito interessante.', '2025-03-04 02:37:27'),
 (10, 'Fernanda Alves', 'fernanda@gmail.com', 'Outro', '852963741', 'Amo a estrutura da academia, mas o estacionamento poderia ser maior.', '2025-03-04 02:37:27'),
-(11, 's', 'c@gmail.com', 'Suporte', '9', '9', '2025-03-04 02:40:35');
+(11, 's', 'c@gmail.com', 'Suporte', '9', '9', '2025-03-04 02:40:35'),
+(12, 's', 's@maul.com', 'Suporte', '2', 'wsia', '2025-03-05 20:25:12');
 
 --
 -- Índices para tabelas despejadas
 --
+
+--
+-- Índices de tabela `appointments`
+--
+ALTER TABLE `appointments`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Índices de tabela `opinioes`
@@ -69,12 +103,15 @@ ALTER TABLE `opinioes`
 --
 
 --
+-- AUTO_INCREMENT de tabela `appointments`
+--
+ALTER TABLE `appointments`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+
+--
 -- AUTO_INCREMENT de tabela `opinioes`
 --
 ALTER TABLE `opinioes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 COMMIT;
 
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

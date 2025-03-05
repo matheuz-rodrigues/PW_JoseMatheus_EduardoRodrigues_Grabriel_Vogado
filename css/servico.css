@@ -371,11 +371,13 @@ select {
     justify-content: center;
     align-items: center;
 }
+
 .dias input[type="checkbox"] {
     margin-right: 5px;
     width: 20px;
     height: 20px;
 }
+
 .dias .dias-label {
     font-family: 'Archivo', sans-serif;
     font-size: 1em;
