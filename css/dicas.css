@@ -1,17 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: grey;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tagalog&display=swap');
 h1 {
     text-align: center;
     font-size: 25px;
     margin: 5px;
-
+    font-family: 'Poppins', sans-serif;
 }
 
+h3{
+    font-family: "Roboto", sans-serif;
+}
+
+p{
+    font-family: "Big Shoulders Stencil", sans-serif;
+    text-align: justify;
+    text-indent: 10px;
+    font-family: "Noto Sans Tagalog", sans-serif;
+}
 .cards {
     display: flex;
     flex-wrap: wrap;
@@ -23,58 +30,22 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: #e17e20;
     width: 700px;
     padding: 20px;
-    background-color: #ec1111;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     gap: 20px;
-}
-
-.card .text-content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    text-align: left;
 }
 
 .card h3 {
     font-size: 1.5rem;
 }
 
-.card p {
-    font-size: 1rem;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.card h4 {
-    font-size: 1.2rem;
-    margin-top: 10px;
-}
-
-.card video,
 .card img {
     width: 300px;
     height: 250px;
     border-radius: 8px;
     object-fit: cover;
-}
-
-/* Responsividade para telas menores */
-@media (max-width: 768px) {
-    .card {
-        flex-direction: column;
-        text-align: center;
-        width: 100%;
-    }
-
-    .card .text-content {
-        max-width: 100%;
-    }
-
-    .card video,
-    .card img {
-        width: 100%;
-        height: auto;
-    }
 }
