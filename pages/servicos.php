@@ -70,24 +70,36 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <section class="modalidade">
         <div class="content left">
             <h2>CrossFit</h2>
-            <p>A modalidade de treinamento funcional mais intensa e dinâmica! O <strong>CrossFit</strong> combina <br>
-                levantamento de peso, ginástica e exercícios cardiovasculares, desafiando seu corpo a se<br>
+            <p>A modalidade de treinamento funcional mais intensa e dinâmica! O <strong>CrossFit</strong> combina 
+                levantamento de peso, ginástica e exercícios cardiovasculares, desafiando seu corpo a se
                 superar a cada treino. Ideal para quem busca alta performance, força e resistência.</p>
+            <p>Durante as aulas de CrossFit, os alunos realizam treinos variados e funcionais, que incluem atividades como levantamento de peso olímpico, ginástica (flexões, barras e abdominais), e treinos cardiovasculares. O objetivo é melhorar o condicionamento físico geral, queima de gordura e força muscular.</p>
+            <ul>
+                <li>Melhora da força e resistência muscular.</li>
+                <li>Aumenta a capacidade cardiovascular e respiratória.</li>
+                <li>Desafios diários com treinos constantemente variados.</li>
+            </ul>
         </div>
         <div class="image right">
-            <img src="https://via.placeholder.com/300" alt="CrossFit">
+            <img src="../img/crossfit-beneficios-lesoes-miniatura.jpg" alt="CrossFit">
         </div>
     </section>
 
     <section class="modalidade">
         <div class="content right">
             <h2>Pilates</h2>
-            <p>O <strong>Pilates</strong> foca no fortalecimento muscular, na flexibilidade e no equilíbrio. Com movimentos <br>
-                controlados e exercícios no solo ou com aparelhos, você vai melhorar a postura, a coordenação<br>
+            <p>O <strong>Pilates</strong> foca no fortalecimento muscular, na flexibilidade e no equilíbrio. Com movimentos 
+                controlados e exercícios no solo ou com aparelhos, você vai melhorar a postura, a coordenação
                 e o alongamento, de forma suave e eficiente, sem impacto para as articulações.</p>
+            <p>O Pilates é uma técnica de exercício que utiliza movimentos lentos e controlados, com foco na respiração, alinhamento e fortalecimento do core. Ideal para quem quer melhorar a flexibilidade, força e equilíbrio sem forçar as articulações.</p>
+            <ul>
+                <li>Melhora da flexibilidade e alongamento muscular.</li>
+                <li>Fortalecimento do core (abdominais e lombar).</li>
+                <li>Prevenção de lesões, especialmente em atividades de alto impacto.</li>
+            </ul>
         </div>
         <div class="image left">
-            <img src="https://via.placeholder.com/300" alt="Pilates">
+            <img src="../img/pilates.jpeg" alt="Pilates">
         </div>
     </section>
 
@@ -97,9 +109,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <p>A <strong>Dança</strong> é uma atividade que mistura diversão e exercício. Através de diferentes ritmos, como
                 Zumba, Hip Hop e Dança de Salão, você vai trabalhar a coordenação motora, a agilidade e, claro,
                 queimar muitas calorias! Perfeita para quem quer se expressar de maneira leve e animada.</p>
+            <p>As aulas de Dança são uma excelente maneira de melhorar o ritmo corporal, aumentar a resistência cardiovascular e, ao mesmo tempo, se divertir. Oferecemos estilos variados, como Zumba para emagrecimento e Hip Hop para quem gosta de desafios mais dinâmicos.</p>
+            <ul>
+                <li>Melhora a coordenação motora e equilíbrio.</li>
+                <li>Aumenta a resistência cardiovascular.</li>
+                <li>Atividade divertida que queima muitas calorias.</li>
+            </ul>
         </div>
         <div class="image right">
-            <img src="https://via.placeholder.com/300" alt="Dança">
+            <img src="../img/danca.jpg" alt="Dança">
         </div>
     </section>
 
@@ -109,9 +127,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <p>A prática de <strong>Yoga</strong> é voltada para o equilíbrio entre corpo e mente. Com posturas que promovem
                 flexibilidade, força e concentração, o Yoga ajuda a reduzir o estresse e melhorar a qualidade do
                 sono, além de proporcionar uma sensação de bem-estar e calma para o seu dia a dia.</p>
+            <p>O Yoga envolve uma série de posturas, respirações controladas e técnicas de meditação. Além de melhorar a flexibilidade e fortalecer o corpo, também proporciona um grande benefício psicológico, reduzindo o estresse e a ansiedade.</p>
+            <ul>
+                <li>Melhora a flexibilidade e a força muscular.</li>
+                <li>Reduz o estresse e aumenta o foco mental.</li>
+                <li>Auxilia na melhoria da qualidade do sono.</li>
+            </ul>
         </div>
         <div class="image left">
-            <img src="https://via.placeholder.com/300" alt="Yoga">
+            <img src="../img/yoga.webp" alt="Yoga">
         </div>
     </section>
 
@@ -121,9 +145,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <p>Com a <strong>Musculação</strong>, você vai fortalecer seu corpo e melhorar o condicionamento físico de maneira
                 controlada e personalizada. Seja para ganhar massa muscular, melhorar a resistência ou definir o
                 corpo, nossos treinos são elaborados para atender suas necessidades, com acompanhamento especializado.</p>
+            <p>A musculação é a base para o ganho de força, aumento de massa muscular e redução de gordura corporal. As aulas podem ser adaptadas para iniciantes, intermediários e avançados, com foco em resultados específicos como hipertrofia ou emagrecimento.</p>
+            <ul>
+                <li>Aumento de massa muscular e força.</li>
+                <li>Melhora do condicionamento físico e resistência.</li>
+                <li>Redução de gordura corporal de maneira controlada.</li>
+            </ul>
         </div>
         <div class="image right">
-            <img src="https://via.placeholder.com/300" alt="Musculação">
+            <img src="../img/musculacao.png" alt="Musculação">
         </div>
     </section>
 
@@ -133,14 +163,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <p>Desenvolva disciplina, força e confiança com as <strong>Artes Marciais</strong>! Nossas aulas de <strong>karatê</strong>,
                 <strong>judo</strong>, <strong>taekwondo</strong> e <strong>kickboxing</strong> são perfeitas para quem deseja aprender
                 técnicas de defesa pessoal, melhorar a flexibilidade e aumentar a resistência física, tudo enquanto adquire
-                autoconfiança e respeito.
-            </p>
+                autoconfiança e respeito.</p>
+            <p>As Artes Marciais ajudam a melhorar o controle do corpo e da mente, além de ensinar técnicas de defesa pessoal. Elas oferecem uma excelente oportunidade para aumentar a disciplina e o respeito próprio, ao mesmo tempo que se trabalha o corpo de forma intensa e eficiente.</p>
+            <ul>
+                <li>Desenvolvimento da disciplina e respeito.</li>
+                <li>Aumento da flexibilidade e resistência física.</li>
+                <li>Aprendizado de técnicas de defesa pessoal.</li>
+            </ul>
         </div>
         <div class="image left">
-            <img src="https://via.placeholder.com/300" alt="Artes Marciais">
+            <img src="../img/luta.avif" alt="Artes Marciais">
         </div>
     </section>
-
     <section class="team">
         <h2>Conheça nossa Equipe de Personal Trainers</h2>
         <div class="cards">
