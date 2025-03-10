@@ -45,10 +45,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Piticos Gym</title>
     <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/servico.css">
     <link rel="shortcut icon" href="../img/logo.ico" type="image/x-icon">
-    <script src="../js/script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <?php echo $alertScript; ?>
 </head>
 
@@ -175,46 +174,60 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <img src="../img/luta.avif" alt="Artes Marciais">
         </div>
     </section>
-    <section class="team">
-        <h2>Conheça nossa Equipe de Personal Trainers</h2>
-        <div class="cards">
-            <div class="card">
-                <img src="https://via.placeholder.com/150" alt="Personal Trainer 1">
-                <div class="card-content">
-                    <h3>João Silva</h3>
-                    <p class="subtitulo">Personal Trainer - Treinamento Funcional</p>
-                    <p class="descricao">Com vasta experiência em treinamento funcional, João ajuda a melhorar a força, a resistência e a flexibilidade de seus alunos, adaptando os treinos às suas necessidades e objetivos.</p>
+    <div class="team">
+    <div class="container swiper">
+        <div class="slider-wrapper">
+            <div class="card-list swiper-wrapper">
+                <div class="card-item swiper-slide">
+                    <img src="img/personal" alt="personal1" class="user-image">
+                    <h2 class="user-name">James Wilson</h2>
+                    <p class="user-profession">Software</p>
+                    <button class="message-button">message</button>
+                </div>
+
+                <div class="card-item swiper-slide">
+                    <img src="img/personal" alt="personal1" class="user-image">
+                    <h2 class="user-name">Duck White</h2>
+                    <p class="user-profession">Software</p>
+                    <button class="message-button">message</button>
+                </div>
+
+                <div class="card-item swiper-slide">
+                    <img src="img/personal" alt="personal1" class="user-image">
+                    <h2 class="user-name">eduardo</h2>
+                    <p class="user-profession">Software</p>
+                    <button class="message-button">message</button>
+                </div>
+
+                <div class="card-item swiper-slide">
+                    <img src="img/personal" alt="personal1" class="user-image">
+                    <h2 class="user-name">carlos</h2>
+                    <p class="user-profession">Software</p>
+                    <button class="message-button">message</button>
+                </div>
+
+                <div class="card-item swiper-slide">
+                    <img src="img/personal" alt="personal1" class="user-image">
+                    <h2 class="user-name">gabriel</h2>
+                    <p class="user-profession">Software</p>
+                    <button class="message-button">message</button>
+                </div>
+
+                <div class="card-item swiper-slide">
+                    <img src="img/personal" alt="personal1" class="user-image">
+                    <h2 class="user-name">pitico</h2>
+                    <p class="user-profession">Software</p>
+                    <button class="message-button">message</button>
                 </div>
             </div>
 
-            <div class="card">
-                <img src="https://via.placeholder.com/150" alt="Personal Trainer 2">
-                <div class="card-content">
-                    <h3>Ana Costa</h3>
-                    <p class="subtitulo">Personal Trainer - Musculação</p>
-                    <p class="descricao">Ana é especializada em musculação e treinamento de força. Ela trabalha com seus alunos para alcançar objetivos como hipertrofia muscular e condicionamento físico de forma segura e eficiente.</p>
-                </div>
-            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
 
-            <div class="card">
-                <img src="https://via.placeholder.com/150" alt="Personal Trainer 3">
-                <div class="card-content">
-                    <h3>Lucas Pereira</h3>
-                    <p class="subtitulo">Personal Trainer - Cardio e Emagrecimento</p>
-                    <p class="descricao">Lucas foca em treinos cardiovasculares para emagrecimento e melhora da resistência física. Seus programas são personalizados para ajudar cada aluno a atingir suas metas de forma saudável e eficaz.</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="https://via.placeholder.com/150" alt="Personal Trainer 4">
-                <div class="card-content">
-                    <h3>Carla Oliveira</h3>
-                    <p class="subtitulo">Personal Trainer - Pilates e Flexibilidade</p>
-                    <p class="descricao">Carla é especialista em Pilates e trabalha com seus alunos para melhorar a postura, flexibilidade e força do core, com foco na prevenção de lesões e qualidade de vida.</p>
-                </div>
-            </div>
         </div>
-    </section>
+    </div>
+    </div>
     <section id="formAgendar">
         <div class="main">
             <!-- Checkbox oculto para controle de layout (conforme estrutura original) -->
@@ -283,6 +296,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <footer class="rodape">
         <p>2025 Piticos Gym &copy; Todos os direitos reservados. Desenvolvido por J. Matheus, Eduardo R. e Gabriel V. </p>
     </footer>
+    <script src="../js/slider.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
+
 
 </html>
