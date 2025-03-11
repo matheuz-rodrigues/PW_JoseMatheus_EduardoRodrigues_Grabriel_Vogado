@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 06/03/2025 às 00:47
+-- Tempo de geração: 11/03/2025 às 07:32
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.1.25
 
@@ -46,7 +46,8 @@ INSERT INTO `appointments` (`id`, `nome`, `email`, `modalidade`, `horario`, `dia
 (2, 'Maria Souza', 'maria@example.com', 'Pilates', '10h00min', 'Terça, Quinta', '2025-03-05 22:09:34'),
 (3, 'Pedro Oliveira', 'pedro@example.com', 'Dança', '11h30min', 'Segunda, Sexta, Domingo', '2025-03-05 22:09:34'),
 (4, 'Ana Costa', 'ana@example.com', 'Yoga', '15h00min', 'Quarta, Quinta', '2025-03-05 22:09:34'),
-(5, 'Carlos Lima', 'carlos@example.com', 'Musculação', '17h00min', 'Segunda, Terça, Quarta, Quinta, Sexta', '2025-03-05 22:09:34');
+(5, 'Carlos Lima', 'carlos@example.com', 'Musculação', '17h00min', 'Segunda, Terça, Quarta, Quinta, Sexta', '2025-03-05 22:09:34'),
+(11, 'Cleide Oliveira da Silva', 'oi@gmail.com', 'Pilates', '8h00min', 'Quarta', '2025-03-11 05:43:37');
 
 -- --------------------------------------------------------
 
@@ -80,7 +81,8 @@ INSERT INTO `opinioes` (`id`, `nome`, `email`, `assunto`, `telefone`, `opiniao`,
 (9, 'Marcos Ferreira', 'marcos@uol.com.br', 'Sugestão', '753951456', 'Uma área de descanso no centro de atividades seria muito interessante.', '2025-03-04 02:37:27'),
 (10, 'Fernanda Alves', 'fernanda@gmail.com', 'Outro', '852963741', 'Amo a estrutura da academia, mas o estacionamento poderia ser maior.', '2025-03-04 02:37:27'),
 (11, 's', 'c@gmail.com', 'Suporte', '9', '9', '2025-03-04 02:40:35'),
-(12, 's', 's@maul.com', 'Suporte', '2', 'wsia', '2025-03-05 20:25:12');
+(12, 's', 's@maul.com', 'Suporte', '2', 'wsia', '2025-03-05 20:25:12'),
+(13, 'Matheus', 'josematheus.0800@gmail.com', 'Sugestão', '9999', 'testando', '2025-03-11 06:27:45');
 
 --
 -- Índices para tabelas despejadas
@@ -106,12 +108,15 @@ ALTER TABLE `opinioes`
 -- AUTO_INCREMENT de tabela `appointments`
 --
 ALTER TABLE `appointments`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT de tabela `opinioes`
 --
 ALTER TABLE `opinioes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 COMMIT;
 
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
