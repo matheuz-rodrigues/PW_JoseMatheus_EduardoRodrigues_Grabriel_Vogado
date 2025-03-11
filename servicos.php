@@ -44,17 +44,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Piticos Gym</title>
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../css/servico.css">
-    <link rel="shortcut icon" href="../img/logo.ico" type="image/x-icon">
-    <script src="../js/script.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/servico.css">
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <?php echo $alertScript; ?>
 </head>
 
 <body>
     <header>
-    <img src="../img/logo.jpg" alt="Logo" onclick="window.location.href='index.html'">
+    <img src="img/logo.jpg" alt="Logo" onclick="window.location.href='index.html'">
         <ul>
             <li><a href="index.html">Home |</a></li>
             <li><a href="servicos.php">Serviços e Horarios |</a></li>
@@ -81,7 +80,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             </ul>
         </div>
         <div class="image right">
-            <img src="../img/crossfit-beneficios-lesoes-miniatura.jpg" alt="CrossFit">
+            <img src="img/crossfit-beneficios-lesoes-miniatura.jpg" alt="CrossFit">
         </div>
     </section>
 
@@ -99,7 +98,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             </ul>
         </div>
         <div class="image left">
-            <img src="../img/pilates.jpeg" alt="Pilates">
+            <img src="img/pilates.jpeg" alt="Pilates">
         </div>
     </section>
 
@@ -117,7 +116,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             </ul>
         </div>
         <div class="image right">
-            <img src="../img/danca.jpg" alt="Dança">
+            <img src="img/danca.jpg" alt="Dança">
         </div>
     </section>
 
@@ -135,7 +134,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             </ul>
         </div>
         <div class="image left">
-            <img src="../img/yoga.webp" alt="Yoga">
+            <img src="img/yoga.webp" alt="Yoga">
         </div>
     </section>
 
@@ -153,7 +152,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             </ul>
         </div>
         <div class="image right">
-            <img src="../img/musculacao.png" alt="Musculação">
+            <img src="img/musculacao.png" alt="Musculação">
         </div>
     </section>
 
@@ -172,58 +171,93 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             </ul>
         </div>
         <div class="image left">
-            <img src="../img/luta.avif" alt="Artes Marciais">
+            <img src="img/luta.avif" alt="Artes Marciais">
         </div>
     </section>
-    <section class="team">
-        <h2>Conheça nossa Equipe de Personal Trainers</h2>
-        <div class="cards">
-            <div class="card">
-                <img src="https://via.placeholder.com/150" alt="Personal Trainer 1">
-                <div class="card-content">
-                    <h3>João Silva</h3>
-                    <p class="subtitulo">Personal Trainer - Treinamento Funcional</p>
-                    <p class="descricao">Com vasta experiência em treinamento funcional, João ajuda a melhorar a força, a resistência e a flexibilidade de seus alunos, adaptando os treinos às suas necessidades e objetivos.</p>
+    <div class="team">
+    <div class="container swiper">
+    <h1>Conheça nossa equipe</h1>
+        <div class="slider-wrapper">
+            <div class="card-list swiper-wrapper">
+                <div class="card-item swiper-slide">
+                    <img src="img/Okita.jpg" alt="personal1" class="user-image">
+                    <h2 class="user-name">Marcos P. Okita</h2>
+                    <h3 class="user-profession">Yoga</h3>
+                    <p class="user-descricao">Com mais de 10 anos de experiência em diversas instituições, Luana é especialista em Yoga Hatha e Vinyasa. 
+                        Seu trabalho é focado em ajudar alunos a alcançarem equilíbrio físico e mental, usando posturas que 
+                        promovem flexibilidade, força, equilíbrio corporal e relaxamento profundo .</p>
+                    <button><a href="https://wa.me/55XXXXXXXXXXX" target="_blank">Mensagem</a></button>
+            
                 </div>
+
+                <div class="card-item swiper-slide">
+                    <img src="img/Felipe.png" alt="personal1" class="user-image">
+                    <h2 class="user-name">Felipe Almeida</h2>
+                    <h3 class="user-profession">Pilates</h3>
+                    <p class="user-descricao">Felipe é um instrutor de Pilates que combina movimentos controlados e respiração 
+                        para fortalecer o core e melhorar a postura. Trabalha com equipamentos como o Reformer e o Cadillac, 
+                        ajudando seus alunos a desenvolverem força, flexibilidade e equilíbrio de maneira eficaz.</p>
+                    <button><a href="https://wa.me/55XXXXXXXXXXX" target="_blank">Mensagem</a></button>
+                </div>
+
+                <div class="card-item swiper-slide">
+                    <img src="img/Daniel.jpg" alt="personal1" class="user-image">
+                    <h2 class="user-name">Daniel A. Marim</h2>
+                    <h3 class="user-profession">Dança</h3>
+                    <p class="user-descricao">Carolina é uma personal trainer e coreógrafa especializada em dança para fitness. 
+                        Ela oferece aulas energéticas de dança contemporânea, hip hop e ritmos latinos, focando na tonificação 
+                        muscular, coordenação e resistência cardiovascular. Suas aulas são perfeitas para quem quer emagrecer 
+                        se divertindo.</p>
+                    <button><a href="https://wa.me/55XXXXXXXXXXX" target="_blank">Mensagem</a></button>
+                </div>
+
+                <div class="card-item swiper-slide">
+                    <img src="img/henrique.jpeg" alt="personal1" class="user-image">
+                    <h2 class="user-name">Henrique M. Santos</h2>
+                    <h3 class="user-profession">Musculação</h3>
+                    <p class="user-descricao">Carolina é uma personal trainer e coreógrafa especializada em dança para fitness. 
+                        Ela oferece aulas energéticas de dança contemporânea, hip hop e ritmos latinos, focando na tonificação 
+                        muscular, coordenação e resistência cardiovascular. Suas aulas são perfeitas para quem quer emagrecer 
+                        se divertindo.</p>
+                    <button><a href="https://wa.me/55XXXXXXXXXXX" target="_blank">Mensagem</a></button>
+                </div>
+
+                <div class="card-item swiper-slide">
+                    <img src="img/marcela.png" alt="personal1" class="user-image">
+                    <h2 class="user-name">Marcela Souza</h2>
+                    <h3 class="user-profession">Crossfit</h3>
+                    <p class="user-descricao">Marcela é uma coach de CrossFit que se especializa em treinos de alta intensidade 
+                        e desafios metabólicos. Ela cria sessões variadas com movimentos funcionais, como levantamento de peso, 
+                        ginástica e cardio, para melhorar a força, resistência e agilidade. Suas aulas são dinâmicas e adaptáveis.</p>
+                    <button><a href="https://wa.me/55XXXXXXXXXXX" target="_blank">Mensagem</a></button>
+                </div>
+
+                <div class="card-item swiper-slide">
+                    <img src="img/rodrigo.png" alt="personal1" class="user-image">
+                    <h2 class="user-name">Rodrigo Lima</h2>
+                    <h3 class="user-profession">Artes Marciais</h3>
+                    <p class="user-descricao">Rodrigo é um mestre de artes marciais com mais de 15 anos de experiência. Ele treina 
+                        seus alunos em diversas modalidades, incluindo Muay Thai, Jiu-Jitsu e Karatê. Focado na disciplina, respeito 
+                        e força mental, ele ajuda os alunos a desenvolverem habilidades de autodefesa enquanto aumentam sua 
+                        resistência, força e confiança.</p>
+                    <button><a href="https://wa.me/55XXXXXXXXXXX" target="_blank">Mensagem</a></button>
+                </div>
+
             </div>
 
-            <div class="card">
-                <img src="https://via.placeholder.com/150" alt="Personal Trainer 2">
-                <div class="card-content">
-                    <h3>Ana Costa</h3>
-                    <p class="subtitulo">Personal Trainer - Musculação</p>
-                    <p class="descricao">Ana é especializada em musculação e treinamento de força. Ela trabalha com seus alunos para alcançar objetivos como hipertrofia muscular e condicionamento físico de forma segura e eficiente.</p>
-                </div>
-            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
 
-            <div class="card">
-                <img src="https://via.placeholder.com/150" alt="Personal Trainer 3">
-                <div class="card-content">
-                    <h3>Lucas Pereira</h3>
-                    <p class="subtitulo">Personal Trainer - Cardio e Emagrecimento</p>
-                    <p class="descricao">Lucas foca em treinos cardiovasculares para emagrecimento e melhora da resistência física. Seus programas são personalizados para ajudar cada aluno a atingir suas metas de forma saudável e eficaz.</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="https://via.placeholder.com/150" alt="Personal Trainer 4">
-                <div class="card-content">
-                    <h3>Carla Oliveira</h3>
-                    <p class="subtitulo">Personal Trainer - Pilates e Flexibilidade</p>
-                    <p class="descricao">Carla é especialista em Pilates e trabalha com seus alunos para melhorar a postura, flexibilidade e força do core, com foco na prevenção de lesões e qualidade de vida.</p>
-                </div>
-            </div>
         </div>
-    </section>
+    </div>
+    </div>
     <section id="formAgendar">
         <div class="main">
-            <!-- Checkbox oculto para controle de layout (conforme estrutura original) -->
-            <input type="checkbox" id="chk" aria-hidden="true">
-            <div class="signup">
                 <form action="" method="post">
                     <label for="chk" aria-hidden="true">Agende sua aula</label>
 
-                    <!-- Exibe mensagem de sucesso ou erro -->
+       
                     <?php if (!empty($message)) : ?>
                         <div class="message"><?php echo htmlspecialchars($message); ?></div>
                     <?php endif; ?>
@@ -283,6 +317,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <footer class="rodape">
         <p>2025 Piticos Gym &copy; Todos os direitos reservados. Desenvolvido por J. Matheus, Eduardo R. e Gabriel V. </p>
     </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
+
 
 </html>

@@ -46,16 +46,16 @@ $conn->close();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fale Conosco</title>
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../css/contato.css">
-    <link rel="shortcut icon" href="../img/logo.ico" type="image/x-icon">
-    <script src="../js/script.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/contato.css">
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+    <script src="js/script.js"></script>
 </head>
 
 <body>
     <header>
-        <img src="../img/logo.jpg" alt="Logo" onclick="window.location.href='index.html'">
+        <img src="img/logo.jpg" alt="Logo" onclick="window.location.href='index.html'">
         <ul>
             <li><a href="index.html">Home |</a></li>
             <li><a href="servicos.php">Serviços e Horários |</a></li>
@@ -71,7 +71,7 @@ $conn->close();
 
         <div class="form">
             <form method="post">
-                <label for="chk" aria-hidden="true">Mande sua opinião</label>
+                <label aria-hidden="true">Mande sua opinião</label>
                 <input type="text" name="txt" placeholder="Informe seu nome" required="">
                 <input type="email" name="email" placeholder="Email" required="">
                 <select name="assunto" required>
@@ -88,8 +88,6 @@ $conn->close();
         </div>
     </section>
 
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <a href="https://api.whatsapp.com/send?phone=5591999175479&text=Hello,%20World!%20:)"
         class="float" target="_blank">
         <i class="fa fa-whatsapp my-float"></i>
@@ -98,6 +96,8 @@ $conn->close();
     <footer class="rodape">
         <p>2025 Piticos Gym &copy; Todos os direitos reservados. Desenvolvido por J. Matheus, Eduardo R. e Gabriel V. </p>
     </footer>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 </body>
 

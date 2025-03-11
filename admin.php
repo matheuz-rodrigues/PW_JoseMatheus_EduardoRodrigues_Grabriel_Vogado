@@ -16,18 +16,18 @@ if (!isset($_SESSION["admin"]) || $_SESSION["admin"] !== true) {
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../css/admin.css">
-    <link rel="shortcut icon" href="../img/logo.ico" type="image/x-icon">
-    <script src="../js/script.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+    <script src="js/script.js"></script>
 </head>
 <body>
     <header>
         <div class="text-box">
             <a href="logout.php" class="btn btn-white btn-animate">Sair</a>
         </div>
-        <img src="../img/logo.jpg" alt="Logo" onclick="index.html">
+        <img src="img/logo.jpg" alt="Logo" onclick="index.html">
         <ul>
             <li><a href="index.html">Home |</a></li>
             <li><a href="servicos.php">Serviços e Horarios |</a></li>

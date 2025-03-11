@@ -22,10 +22,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Área do Aluno</title>
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../css/area-aluno.css">
-    <link rel="shortcut icon" href="../img/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/area-aluno.css">
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -35,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         </script>
     <?php endif; ?>
     <header>
-        <img src="../img/logo.jpg" alt="Logo" onclick="window.location.href='index.html'">
+        <img src="img/logo.jpg" alt="Logo" onclick="window.location.href='index.html'">
         <ul>
             <li><a href="index.html">Home |</a></li>
             <li><a href="servicos.php">Serviços e Horarios |</a></li>
