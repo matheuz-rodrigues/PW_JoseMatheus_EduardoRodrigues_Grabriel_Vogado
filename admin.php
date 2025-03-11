@@ -131,5 +131,5 @@ if (!isset($_SESSION["admin"]) || $_SESSION["admin"] !== true) {
     </div>
 
     <footer class="rodape">
-        <p>2025 Piticos Gym &copy; Todos os direitos reservados. Desenvolvido por J. Matheus, Eduardo R. e Gabriel V.</p>
+        <p>2025 Apollo Gym &copy; Todos os direitos reservados. Desenvolvido por J. Matheus, Eduardo R. e Gabriel V.</p>
     </footer>

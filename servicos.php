@@ -43,7 +43,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Piticos Gym</title>
+    <title>Apollo Gym</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/servico.css">
     <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
@@ -315,7 +315,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
     <footer class="rodape">
-        <p>2025 Piticos Gym &copy; Todos os direitos reservados. Desenvolvido por J. Matheus, Eduardo R. e Gabriel V. </p>
+        <p>2025 Apollo Gym &copy; Todos os direitos reservados. Desenvolvido por J. Matheus, Eduardo R. e Gabriel V. </p>
     </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
