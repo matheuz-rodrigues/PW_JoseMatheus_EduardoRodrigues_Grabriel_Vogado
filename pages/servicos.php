@@ -296,8 +296,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <footer class="rodape">
         <p>2025 Piticos Gym &copy; Todos os direitos reservados. Desenvolvido por J. Matheus, Eduardo R. e Gabriel V. </p>
     </footer>
-    <script src="../js/slider.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 
 
