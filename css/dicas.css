@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tagalog&display=swap');
 
 body {
-    background-color: rgb(213, 139, 0);
+    background-color: #dc710c49;
     background-size: cover;
     background-position: center;
 }
@@ -50,8 +50,10 @@ p {
 }
 
 .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid #e68a00;
-    text-align: left;
     background-color: #ffb570;
     margin-left: 15px;
     margin-right: 15px;
@@ -70,19 +72,19 @@ p {
 
 .card img {
     float: none;
-    width: 150px;
+    width: 160px;
     height: 150px;
     background-color: #dc710c49;
-    margin-right: 0;
     border-radius: 5px;
+    margin-left: 7.5px;
+    margin-right: 7.5px;
 }
 
 .rodape {
-
     margin-top: 30px;
     width: 100%;
     background-color: #ffffff;
-
+    margin-bottom: 0px;
 }
 
 .rodape p {
@@ -99,6 +101,7 @@ p {
 .nutricao,
 .vestuário {
     margin-top: 40px;
+
 }
 
 .alongamento .cards {
@@ -129,4 +132,8 @@ p {
 }
 .social-icons{
     margin-left: 10px;
+    justify-content: center;
+}
+.ref{
+    background-color: white;
 }
