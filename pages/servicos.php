@@ -176,49 +176,73 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     </section>
     <div class="team">
     <div class="container swiper">
+    <h1>Conheça nossa equipe</h1>
         <div class="slider-wrapper">
             <div class="card-list swiper-wrapper">
                 <div class="card-item swiper-slide">
-                    <img src="img/personal" alt="personal1" class="user-image">
-                    <h2 class="user-name">James Wilson</h2>
-                    <p class="user-profession">Software</p>
-                    <button class="message-button">message</button>
+                    <img src="../img/Okita.jpg" alt="personal1" class="user-image">
+                    <h2 class="user-name">Marcos P. Okita</h2>
+                    <h3 class="user-profession">Yoga</h3>
+                    <p class="user-descricao">Com mais de 10 anos de experiência em diversas instituições, Luana é especialista em Yoga Hatha e Vinyasa. 
+                        Seu trabalho é focado em ajudar alunos a alcançarem equilíbrio físico e mental, usando posturas que 
+                        promovem flexibilidade, força, equilíbrio corporal e relaxamento profundo .</p>
+                    <button><a href="https://wa.me/55XXXXXXXXXXX" target="_blank">Mensagem</a></button>
+            
                 </div>
 
                 <div class="card-item swiper-slide">
-                    <img src="img/personal" alt="personal1" class="user-image">
-                    <h2 class="user-name">Duck White</h2>
-                    <p class="user-profession">Software</p>
-                    <button class="message-button">message</button>
+                    <img src="../img/Felipe.png" alt="personal1" class="user-image">
+                    <h2 class="user-name">Felipe Almeida</h2>
+                    <h3 class="user-profession">Pilates</h3>
+                    <p class="user-descricao">Felipe é um instrutor de Pilates que combina movimentos controlados e respiração 
+                        para fortalecer o core e melhorar a postura. Trabalha com equipamentos como o Reformer e o Cadillac, 
+                        ajudando seus alunos a desenvolverem força, flexibilidade e equilíbrio de maneira eficaz.</p>
+                    <button><a href="https://wa.me/55XXXXXXXXXXX" target="_blank">Mensagem</a></button>
                 </div>
 
                 <div class="card-item swiper-slide">
-                    <img src="img/personal" alt="personal1" class="user-image">
-                    <h2 class="user-name">eduardo</h2>
-                    <p class="user-profession">Software</p>
-                    <button class="message-button">message</button>
+                    <img src="../img/Daniel.jpg" alt="personal1" class="user-image">
+                    <h2 class="user-name">Daniel A. Marim</h2>
+                    <h3 class="user-profession">Dança</h3>
+                    <p class="user-descricao">Carolina é uma personal trainer e coreógrafa especializada em dança para fitness. 
+                        Ela oferece aulas energéticas de dança contemporânea, hip hop e ritmos latinos, focando na tonificação 
+                        muscular, coordenação e resistência cardiovascular. Suas aulas são perfeitas para quem quer emagrecer 
+                        se divertindo.</p>
+                    <button><a href="https://wa.me/55XXXXXXXXXXX" target="_blank">Mensagem</a></button>
                 </div>
 
                 <div class="card-item swiper-slide">
-                    <img src="img/personal" alt="personal1" class="user-image">
-                    <h2 class="user-name">carlos</h2>
-                    <p class="user-profession">Software</p>
-                    <button class="message-button">message</button>
+                    <img src="../img/henrique.jpeg" alt="personal1" class="user-image">
+                    <h2 class="user-name">Henrique M. Santos</h2>
+                    <h3 class="user-profession">Musculação</h3>
+                    <p class="user-descricao">Carolina é uma personal trainer e coreógrafa especializada em dança para fitness. 
+                        Ela oferece aulas energéticas de dança contemporânea, hip hop e ritmos latinos, focando na tonificação 
+                        muscular, coordenação e resistência cardiovascular. Suas aulas são perfeitas para quem quer emagrecer 
+                        se divertindo.</p>
+                    <button><a href="https://wa.me/55XXXXXXXXXXX" target="_blank">Mensagem</a></button>
                 </div>
 
                 <div class="card-item swiper-slide">
-                    <img src="img/personal" alt="personal1" class="user-image">
-                    <h2 class="user-name">gabriel</h2>
-                    <p class="user-profession">Software</p>
-                    <button class="message-button">message</button>
+                    <img src="../img/marcela.png" alt="personal1" class="user-image">
+                    <h2 class="user-name">Marcela Souza</h2>
+                    <h3 class="user-profession">Crossfit</h3>
+                    <p class="user-descricao">Marcela é uma coach de CrossFit que se especializa em treinos de alta intensidade 
+                        e desafios metabólicos. Ela cria sessões variadas com movimentos funcionais, como levantamento de peso, 
+                        ginástica e cardio, para melhorar a força, resistência e agilidade. Suas aulas são dinâmicas e adaptáveis.</p>
+                    <button><a href="https://wa.me/55XXXXXXXXXXX" target="_blank">Mensagem</a></button>
                 </div>
 
                 <div class="card-item swiper-slide">
-                    <img src="img/personal" alt="personal1" class="user-image">
-                    <h2 class="user-name">pitico</h2>
-                    <p class="user-profession">Software</p>
-                    <button class="message-button">message</button>
+                    <img src="../img/rodrigo.png" alt="personal1" class="user-image">
+                    <h2 class="user-name">Rodrigo Lima</h2>
+                    <h3 class="user-profession">Artes Marciais</h3>
+                    <p class="user-descricao">Rodrigo é um mestre de artes marciais com mais de 15 anos de experiência. Ele treina 
+                        seus alunos em diversas modalidades, incluindo Muay Thai, Jiu-Jitsu e Karatê. Focado na disciplina, respeito 
+                        e força mental, ele ajuda os alunos a desenvolverem habilidades de autodefesa enquanto aumentam sua 
+                        resistência, força e confiança.</p>
+                    <button><a href="https://wa.me/55XXXXXXXXXXX" target="_blank">Mensagem</a></button>
                 </div>
+
             </div>
 
             <div class="swiper-pagination"></div>
