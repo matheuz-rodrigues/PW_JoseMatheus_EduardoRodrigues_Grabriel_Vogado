@@ -54,7 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 <body>
     <header>
-        <img src="../img/logo.jpg" alt="Logo" onclick="index.html">
+    <img src="../img/logo.jpg" alt="Logo" onclick="window.location.href='index.html'">
         <ul>
             <li><a href="index.html">Home |</a></li>
             <li><a href="servicos.php">Serviços e Horarios |</a></li>

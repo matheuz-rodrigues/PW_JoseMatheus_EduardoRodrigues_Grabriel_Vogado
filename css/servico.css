@@ -21,7 +21,7 @@ header {
 }
 
 header img {
-
+    cursor: pointer;
     height: calc(60px + 1vw);
 }
 

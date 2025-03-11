@@ -55,7 +55,7 @@ $conn->close();
 
 <body>
     <header>
-        <img src="../img/logo.jpg" alt="Logo" onclick="location.href='../index.html'">
+        <img src="../img/logo.jpg" alt="Logo" onclick="window.location.href='index.html'">
         <ul>
             <li><a href="index.html">Home |</a></li>
             <li><a href="servicos.php">Serviços e Horários |</a></li>
@@ -68,9 +68,9 @@ $conn->close();
     </header>
 
     <section class="main">
-        
+
         <div class="form">
-            <form  method="post">
+            <form method="post">
                 <label for="chk" aria-hidden="true">Mande sua opinião</label>
                 <input type="text" name="txt" placeholder="Informe seu nome" required="">
                 <input type="email" name="email" placeholder="Email" required="">
@@ -96,7 +96,7 @@ $conn->close();
     </a>
 
     <footer class="rodape">
-        <p>2025 Piticos Gym &copy; Todos os direitos reservados. Desenvolvido por J. Matheus, Eduardo R. e Gabriel V. </p>    
+        <p>2025 Piticos Gym &copy; Todos os direitos reservados. Desenvolvido por J. Matheus, Eduardo R. e Gabriel V. </p>
     </footer>
 
 </body>

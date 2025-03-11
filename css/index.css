@@ -21,10 +21,12 @@ header {
 }
 
 header img {
-
     height: calc(60px + 1vw);
 }
 
+header img:hover {
+    cursor: pointer;
+}
 header ul {
     display: flex;
     list-style: none;

@@ -8,6 +8,8 @@ header {
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
+
+
 body {
     display: flex;
     align-items: center;
@@ -15,6 +17,9 @@ body {
     flex-direction: column;
 }
 
+header img:hover {
+    cursor: pointer;
+}
 .main {
     margin-top: 30px;
     width: 800px;
